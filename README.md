@@ -145,3 +145,196 @@ The successful implementation demonstrated the extensibility of the framework to
 This capability provides a foundation for future studies involving diverse vertical-flight aircraft configurations.
 
 ---
+
+Flight Dynamics Analysis
+Trim Analysis
+
+TRAC provides equilibrium analysis capabilities for multiple vertical-flight aircraft operating conditions.
+
+Supported trim conditions include:
+
+hover
+forward flight
+climb
+descent
+coordinated turning flight
+
+Trim solutions provide operating points for subsequent dynamic analysis, linear model extraction, and flight-control system development.
+
+Linear Model Extraction
+
+The nonlinear aircraft model can be linearized around selected operating conditions.
+
+Extracted linear models enable:
+
+stability analysis
+dynamic mode evaluation
+control-system design
+aircraft response prediction
+
+The linearization capability allows TRAC to bridge nonlinear aircraft simulation and control-oriented analysis.
+
+Flight Simulation
+
+The nonlinear simulation environment enables analysis of:
+
+aircraft dynamic response
+control input effects
+maneuver characteristics
+flight-condition variations
+autonomous-flight scenarios
+
+TRAC provides a unified environment where aircraft modeling, dynamics analysis, and control-system development can be evaluated together.
+
+Validation
+
+The UH-60 helicopter model was used as the primary validation platform for the TRAC framework.
+
+Validation was performed through comparison with available U.S. Army UH-60 flight-test data.
+
+Validation parameters include:
+
+aircraft attitude response
+rotor response characteristics
+power requirements
+control inputs
+
+The validation demonstrated that TRAC can reproduce important helicopter flight characteristics while maintaining a modular architecture suitable for future aircraft configurations.
+
+Application: Autonomous Flight Simulation
+
+TRAC provides the aircraft dynamics foundation for advanced autonomous-flight research.
+
+The framework has been integrated with:
+
+flight-control algorithms
+guidance and navigation systems
+vision-based autonomous systems
+
+One demonstrated application is autonomous vertical-flight aircraft ship-landing simulation.
+
+This application integrates:
+
+Aircraft Modeling
+
+↓
+
+Flight Dynamics Simulation
+
+↓
+
+Guidance & Control
+
+↓
+
+Vision-Based Navigation
+
+↓
+
+Autonomous Landing
+
+The integration demonstrates how physics-based aircraft modeling can support complete autonomous vertical-flight system development.
+
+Sample Code
+
+Selected examples will be provided to demonstrate the implementation and application of TRAC.
+
+Examples include:
+
+aircraft model configuration
+trim analysis
+linear model extraction
+flight simulation
+control-system integration
+
+The complete source code is not currently publicly released.
+
+Technical documentation, validation results, selected implementations, and demonstration examples will be progressively released.
+
+Repository Structure
+
+TRAC-Vertical-Flight-Dynamics
+
+README.md
+
+assets
+
+trac-overview.png
+
+docs
+
+framework-overview.md
+
+mathematical-model.md
+
+rotor-modeling.md
+
+trim-analysis.md
+
+validation.md
+
+aircraft_models
+
+UH60
+
+Harmony_Aria
+
+sample_code
+
+trim_analysis
+
+linearization
+
+simulation
+
+results
+
+publications
+
+Future Development
+
+TRAC is continuously being extended as a research framework for next-generation vertical-flight systems.
+
+Future research directions include:
+
+additional rotorcraft configurations
+variable-fidelity aircraft modeling
+advanced VTOL aircraft concepts
+emerging eVTOL configurations
+physics-based and AI-enhanced modeling approaches
+integration with intelligent autonomous flight systems
+
+The long-term goal is to develop a flexible computational environment capable of supporting aircraft studies ranging from early conceptual design to advanced autonomous-flight applications.
+
+Publications
+Development and Validation of a Comprehensive Helicopter Flight Dynamics Code
+
+AIAA SciTech Forum, 2020
+
+Development and validation of TRAC using comprehensive UH-60 modeling and U.S. Army flight-test data.
+
+Development of "Aria," a Compact, Quiet Personal Electric Helicopter
+
+Journal of the American Helicopter Society, 2023
+
+Design, modeling, development, and flight testing of a compact coaxial electric personal air vehicle.
+
+Citation
+
+If TRAC contributes to your research, please cite:
+
+@inproceedings{lee2020trac,
+
+author={Bochan Lee},
+
+title={Development and Validation of a Comprehensive Helicopter Flight Dynamics Code},
+
+booktitle={AIAA SciTech Forum},
+
+year={2020}
+
+}
+
+License
+
+Documentation and selected examples are provided for research and educational purposes.
