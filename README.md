@@ -178,49 +178,59 @@ Through validation against UH-60 flight-test data, TRAC demonstrates the ability
 
 # Aircraft Modeling Capability
 
-TRAC was developed as a general vertical-flight aircraft modeling framework rather than an aircraft-specific simulator.
+TRAC was developed as a general vertical-flight aircraft modeling framework rather than an aircraft-specific simulation tool.
 
-Demonstrated aircraft configurations include:
+The framework is designed to represent different aircraft configurations by combining modular physical components, aerodynamic models, and flight-dynamics formulations within a unified simulation architecture.
 
-- UH-60 conventional helicopter
-- Harmony Aria coaxial rotorcraft
-
-Future extensions include:
-
-- multi-configuration rotorcraft
-- variable-fidelity aircraft models
-- novel vertical-flight aircraft configurations
-- advanced VTOL and eVTOL concepts
+This approach enables TRAC to support research ranging from conventional helicopter analysis to emerging vertical-flight aircraft concepts.
 
 ---
 
-# Demonstrated Aircraft Models
+# Demonstrated Aircraft Configurations
 
 ## UH-60 Helicopter
 
-The UH-60 helicopter was selected as the baseline configuration for development and validation of the TRAC framework.
+The UH-60 helicopter was selected as the baseline configuration for the development and validation of the TRAC framework.
 
-The model includes:
+The UH-60 model incorporates:
 
 - fuselage aerodynamic representation
-- main rotor model
-- tail rotor model
-- horizontal and vertical tail models
+- main rotor aerodynamic model
+- tail rotor aerodynamic model
+- horizontal and vertical empennage models
 - nonlinear six-degree-of-freedom aircraft dynamics
 
-The UH-60 model was validated through comparison with available U.S. Army flight-test data.
+The UH-60 configuration provided a comprehensive validation platform for evaluating the accuracy and robustness of the TRAC framework.
 
-Validation demonstrated the capability of TRAC to reproduce key helicopter flight characteristics and provide a reliable foundation for flight-dynamics analysis and control-system development.
+The model was validated through comparison with available U.S. Army UH-60 flight-test data, demonstrating the capability of TRAC to reproduce key helicopter flight characteristics.
 
 ---
 
 ## Harmony Aria Coaxial Rotorcraft
 
-TRAC was extended beyond conventional helicopter configurations through modeling of Harmony Aria, a compact coaxial electric rotorcraft.
+TRAC was further extended to model Harmony Aria, a compact coaxial electric rotorcraft developed for advanced personal air vehicle research.
 
-The successful implementation demonstrated the extensibility of the framework toward different rotorcraft architectures without restructuring the complete simulation environment.
+The implementation of a coaxial rotorcraft configuration demonstrated the flexibility of the TRAC architecture beyond conventional single-main-rotor helicopters.
 
-This capability provides a foundation for future studies involving diverse vertical-flight aircraft configurations.
+This extension required adaptation of the aircraft representation to accommodate different rotor-system characteristics while maintaining the overall modeling and simulation framework.
+
+The successful modeling of Harmony Aria demonstrated the capability of TRAC to support diverse vertical-flight aircraft configurations.
+
+---
+
+# Future Aircraft Modeling Directions
+
+The modular architecture of TRAC provides a foundation for future expansion toward additional vertical-flight aircraft configurations.
+
+Future research directions include:
+
+- multi-configuration rotorcraft modeling
+- variable-fidelity aircraft models
+- advanced VTOL aircraft configurations
+- emerging eVTOL concepts
+- novel rotor and propulsion architectures
+
+The long-term objective is to establish TRAC as an extensible computational framework capable of supporting aircraft studies from conceptual design through flight-dynamics analysis, control development, and autonomous-flight applications.
 
 ---
 
