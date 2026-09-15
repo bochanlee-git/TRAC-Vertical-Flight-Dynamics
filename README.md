@@ -55,4 +55,93 @@ The framework enables investigation of aircraft behavior from early-stage config
 
 # Framework Architecture
 
-TRAC represents an aircraft as an integration of modular physical components.
+TRAC represents a vertical flight aircraft as an integration of modular physical components.
+
+Vertical Flight Aircraft Model
+
+          |
+          |
+-----------------------
+|          |          |
+
+Fuselage Rotor Empennage
+| | |
+-----------------------
+|
+|
+Flight Dynamics Solver
+|
+|
+Simulation & Control Analysis
+
+
+The modular architecture allows individual components to be modified, replaced, or extended without rebuilding the complete aircraft model.
+
+This structure enables TRAC to support different aircraft configurations with consistent modeling and simulation processes.
+
+---
+
+# Core Capabilities
+
+| Category | Capability |
+|---|---|
+| Aircraft Modeling | Modular component-based aircraft representation |
+| Flight Dynamics | Nonlinear six-degree-of-freedom equations of motion |
+| Rotor Modeling | Main rotor and tail rotor aerodynamic modeling |
+| Aerodynamic Modeling | Component-level force and moment calculations |
+| Trim Analysis | Hover, forward flight, climb/descent, and turning flight |
+| Linearization | Flight-condition-dependent linear model extraction |
+| Stability Analysis | Dynamic mode and eigenvalue analysis |
+| Flight Simulation | Nonlinear aircraft response simulation |
+| Control Integration | Interface for flight-control system development |
+| Validation | Comparison with experimental flight-test data |
+
+---
+
+# Aircraft Modeling Capability
+
+TRAC was developed as a general vertical-flight aircraft modeling framework rather than an aircraft-specific simulator.
+
+Demonstrated aircraft configurations include:
+
+- UH-60 conventional helicopter
+- Harmony Aria coaxial rotorcraft
+
+Future extensions include:
+
+- multi-configuration rotorcraft
+- variable-fidelity aircraft models
+- novel vertical-flight aircraft configurations
+- advanced VTOL and eVTOL concepts
+
+---
+
+# Demonstrated Aircraft Models
+
+## UH-60 Helicopter
+
+The UH-60 helicopter was selected as the baseline configuration for development and validation of the TRAC framework.
+
+The model includes:
+
+- fuselage aerodynamic representation
+- main rotor model
+- tail rotor model
+- horizontal and vertical tail models
+- nonlinear six-degree-of-freedom aircraft dynamics
+
+The UH-60 model was validated through comparison with available U.S. Army flight-test data.
+
+Validation demonstrated the capability of TRAC to reproduce key helicopter flight characteristics and provide a reliable foundation for flight-dynamics analysis and control-system development.
+
+---
+
+## Harmony Aria Coaxial Rotorcraft
+
+TRAC was extended beyond conventional helicopter configurations through modeling of Harmony Aria, a compact coaxial electric rotorcraft.
+
+The successful implementation demonstrated the extensibility of the framework toward different rotorcraft architectures without restructuring the complete simulation environment.
+
+This capability provides a foundation for future studies involving diverse vertical-flight aircraft configurations.
+
+---
