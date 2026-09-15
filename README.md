@@ -295,6 +295,7 @@ The framework has been integrated with:
 One demonstrated application is autonomous vertical-flight aircraft ship-landing simulation.
 
 ```mermaid
+
 flowchart LR
 
 A["Aircraft<br/>Modeling"]
@@ -311,7 +312,9 @@ A --- A1["Rotorcraft Configuration<br/>Main Rotor / Tail Rotor"]
 B --- B1["6-DOF Dynamics<br/>Trim & Linearization"]
 C --- C1["Trajectory Tracking<br/>Control System"]
 D --- D1["Visual State Estimation<br/>Landing Target Detection"]
-E --- E1["Autonomous Mission<br/>Execution"]```
+E --- E1["Autonomous Mission<br/>Execution"]
+
+```
 
 The integration demonstrates how physics-based aircraft modeling can support complete autonomous vertical-flight system development.
 
