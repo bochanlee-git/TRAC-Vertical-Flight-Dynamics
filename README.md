@@ -96,18 +96,83 @@ This structure provides a scalable foundation for investigating conventional rot
 
 # Core Capabilities
 
+TRAC integrates aircraft modeling, nonlinear flight dynamics, and simulation capabilities into a unified computational framework for vertical-flight aircraft research.
+
+The major capabilities of TRAC include:
+
 | Category | Capability |
 |---|---|
-| Aircraft Modeling | Modular component-based aircraft representation |
-| Flight Dynamics | Nonlinear six-degree-of-freedom equations of motion |
-| Rotor Modeling | Main rotor and tail rotor aerodynamic modeling |
-| Aerodynamic Modeling | Component-level force and moment calculations |
-| Trim Analysis | Hover, forward flight, climb/descent, and turning flight |
-| Linearization | Flight-condition-dependent linear model extraction |
+| Aircraft Modeling | Modular representation of aircraft components and configurations |
+| Rotorcraft Modeling | Main rotor, tail rotor, and rotor aerodynamic modeling |
+| Aerodynamics | Component-level force and moment calculation |
+| Flight Dynamics | Nonlinear six-degree-of-freedom aircraft equations of motion |
+| Trim Analysis | Equilibrium analysis for multiple flight conditions |
+| Linearization | Extraction of control-oriented linear aircraft models |
 | Stability Analysis | Dynamic mode and eigenvalue analysis |
 | Flight Simulation | Nonlinear aircraft response simulation |
 | Control Integration | Interface for flight-control system development |
 | Validation | Comparison with experimental flight-test data |
+
+---
+
+## Modular Aircraft Modeling
+
+TRAC enables aircraft configurations to be constructed through independent physical components.
+
+Major modeling elements include:
+
+- fuselage aerodynamic representation
+- main rotor system
+- tail rotor system
+- horizontal and vertical empennage
+- aircraft mass and inertial properties
+
+This modular approach allows new aircraft configurations to be developed by modifying or replacing individual components without redesigning the complete simulation framework.
+
+---
+
+## Flight Dynamics Analysis
+
+TRAC provides nonlinear aircraft dynamics analysis based on six-degree-of-freedom equations of motion.
+
+The framework supports:
+
+- aircraft state propagation
+- force and moment calculation
+- dynamic response analysis
+- flight-condition evaluation
+
+The nonlinear dynamics model provides the foundation for trim analysis, linearization, control-system design, and autonomous-flight simulation.
+
+---
+
+## Control-Oriented Modeling
+
+TRAC provides capabilities for extracting aircraft models suitable for flight-control development.
+
+Supported analysis includes:
+
+- trim condition calculation
+- nonlinear-to-linear model conversion
+- stability analysis
+- dynamic mode evaluation
+
+These capabilities enable integration between physics-based aircraft modeling and advanced flight-control research.
+
+---
+
+## Simulation and Validation
+
+TRAC provides a simulation environment for evaluating aircraft performance and dynamic behavior.
+
+Applications include:
+
+- flight maneuver simulation
+- control-system evaluation
+- autonomous-flight simulation
+- comparison with experimental flight data
+
+Through validation against UH-60 flight-test data, TRAC demonstrates the ability to reproduce key vertical-flight aircraft characteristics while maintaining a flexible and extensible architecture.
 
 ---
 
