@@ -57,27 +57,40 @@ The framework enables investigation of aircraft behavior from early-stage config
 
 TRAC represents a vertical flight aircraft as an integration of modular physical components.
 
+The framework is designed around a component-based architecture, where individual aircraft elements are independently modeled and integrated into a complete nonlinear flight-dynamics system.
+
+```
 Vertical Flight Aircraft Model
 
-          |
-          |
------------------------
-|          |          |
+              |
+              |
+    -------------------------
+    |          |            |
+ Fuselage   Rotor      Empennage
+    |          |            |
+    -------------------------
+              |
+              |
+    Flight Dynamics Solver
+              |
+              |
+    Simulation & Control Analysis
+```
 
-Fuselage Rotor Empennage
-| | |
------------------------
-|
-|
-Flight Dynamics Solver
-|
-|
-Simulation & Control Analysis
+The modular architecture allows individual components to be modified, replaced, or extended without reconstructing the complete aircraft model.
 
+This approach enables TRAC to support various vertical-flight aircraft configurations while maintaining a consistent modeling and simulation framework.
 
-The modular architecture allows individual components to be modified, replaced, or extended without rebuilding the complete aircraft model.
+The framework consists of several major components:
 
-This structure enables TRAC to support different aircraft configurations with consistent modeling and simulation processes.
+- aircraft configuration and geometry definition
+- aerodynamic component modeling
+- rotor aerodynamic modeling
+- nonlinear six-degree-of-freedom equations of motion
+- numerical integration and flight simulation
+- control-system interface
+
+This structure provides a scalable foundation for investigating conventional rotorcraft, coaxial rotorcraft, and future vertical-flight aircraft configurations.
 
 ---
 
