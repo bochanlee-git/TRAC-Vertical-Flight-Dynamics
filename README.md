@@ -294,25 +294,18 @@ The framework has been integrated with:
 
 One demonstrated application is autonomous vertical-flight aircraft ship-landing simulation.
 
-This application integrates:
+```mermaid
+flowchart LR
 
-Aircraft Modeling
-
-↓
-
-Flight Dynamics Simulation
-
-↓
-
-Guidance & Control
-
-↓
-
-Vision-Based Navigation
-
-↓
-
-Autonomous Landing
+A["Aircraft<br/>Modeling"]
+-->
+B["Flight Dynamics<br/>Simulation"]
+-->
+C["Guidance &<br/>Control"]
+-->
+D["Vision-Based<br/>Navigation"]
+-->
+E["Autonomous<br/>Landing"]
 
 The integration demonstrates how physics-based aircraft modeling can support complete autonomous vertical-flight system development.
 
