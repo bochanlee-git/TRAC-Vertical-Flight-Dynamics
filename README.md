@@ -55,27 +55,15 @@ The framework enables investigation of aircraft behavior from early-stage config
 
 # Framework Architecture
 
+<p align="center">
+  <img src="./assets/framework-architecture.png"
+       alt="TRAC Framework Architecture"
+       width="100%">
+</p>
+
 TRAC represents a vertical flight aircraft as an integration of modular physical components.
 
 The framework is designed around a component-based architecture, where individual aircraft elements are independently modeled and integrated into a complete nonlinear flight-dynamics system.
-
-```
-Vertical Flight Aircraft Model
-
-              |
-              |
-    -------------------------
-    |          |            |
- Fuselage   Rotor      Empennage
-    |          |            |
-    -------------------------
-              |
-              |
-    Flight Dynamics Solver
-              |
-              |
-    Simulation & Control Analysis
-```
 
 The modular architecture allows individual components to be modified, replaced, or extended without reconstructing the complete aircraft model.
 
