@@ -38,11 +38,11 @@ Trim analysis determines the aircraft state, control inputs, rotor states, and i
 
 Representative conditions include:
 
-- hover,
-- steady forward flight,
-- climb,
-- descent,
-- and coordinated turning flight.
+- hover
+- steady forward flight
+- climb
+- descent
+- and coordinated turning flight
 
 The general workflow is:
 
@@ -64,14 +64,14 @@ Trim solution
 
 Typical trim outputs include:
 
-- aircraft attitude,
-- collective input,
-- cyclic inputs,
-- pedal or yaw-control input,
-- rotor flapping states,
-- rotor lead-lag states,
-- inflow states,
-- and required rotor power.
+- aircraft attitude
+- collective input
+- cyclic inputs
+- pedal or yaw-control input
+- rotor flapping states
+- rotor lead-lag states
+- inflow states
+- and required rotor power
 
 See:
 
@@ -211,11 +211,11 @@ The material in this directory should be interpreted as educational and research
 
 Unless explicitly stated otherwise:
 
-- the examples are simplified public implementations,
-- they are not the complete original TRAC source code,
-- they do not reproduce every aerodynamic or dynamic submodel,
-- they may use representative or reduced-order data,
-- and their results should not be presented as reproductions of dissertation results without separate verification.
+- the examples are simplified public implementations
+- they are not the complete original TRAC source code
+- they do not reproduce every aerodynamic or dynamic submodel
+- they may use representative or reduced-order data
+- and their results should not be presented as reproductions of dissertation results without separate verification
 
 The purpose is to expose the structure of the analysis rather than the complete research software implementation.
 
@@ -225,11 +225,11 @@ The purpose is to expose the structure of the analysis rather than the complete 
 
 The examples can be used to understand the progression from:
 
-1. aircraft modeling,
-2. equilibrium calculation,
-3. local dynamic-model extraction,
-4. stability analysis,
-5. and closed-loop simulation.
+1. aircraft modeling
+2. equilibrium calculation
+3. local dynamic-model extraction
+4. stability analysis
+5. and closed-loop simulation
 
 For the theoretical background, refer to:
 
