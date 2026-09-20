@@ -139,7 +139,7 @@ The following paths define the intended organization of the public material. Fil
 | `docs/rotor-modeling.md` | Rotor loads, blade motion, inflow, and modeling assumptions. |
 | `docs/trim-analysis.md` | Flight-condition constraints, trim unknowns, and solution procedure. |
 | `docs/validation.md` | Comparison methodology, reference data, results, and limitations. |
-| `aircraft_models/UH60/` | Publicly releasable UH-60 configuration information. |
+| `aircraft_models/UH-60/` | Publicly releasable UH-60 configuration information. |
 | `aircraft_models/Harmony_Aria/` | Harmony Aria configuration and application information. |
 | `sample_code/` | Selected trim, linearization, and simulation examples. |
 | `results/` | Selected figures and analysis outputs with associated conditions. |
