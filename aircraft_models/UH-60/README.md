@@ -216,7 +216,7 @@ $$
 \leq
 \dot{\psi}
 \leq
-25^\circ/\mathrm{s}.
+25^\circ/\mathrm{s}
 $$
 
 These cases demonstrate the ability of the model to compute trimmed operating conditions beyond straight-and-level forward flight.
