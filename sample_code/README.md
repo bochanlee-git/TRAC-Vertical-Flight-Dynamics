@@ -4,10 +4,10 @@ This directory contains selected public examples illustrating the analysis workf
 
 The examples are intended to demonstrate the numerical structure of rotorcraft flight-dynamics analysis, including:
 
-- trim analysis,
-- linear model extraction,
-- stability analysis,
-- and time-domain simulation.
+- trim analysis
+- linear model extraction
+- stability analysis
+- and time-domain simulation
 
 They are not a release of the complete original TRAC research code.
 
