@@ -1,0 +1,10 @@
+speed_kt,beta0_deg,beta1c_deg,beta1s_deg,lambda0,lambda1c,lambda1s,power_hp,note
+0,3.50,-0.40,1.00,0.0583,0.0015,0.0000,1515,Approximate graph digitization from Lee (2021)
+20,3.45,-0.45,0.65,0.0499,0.0012,0.0270,1348,Approximate graph digitization from Lee (2021)
+40,3.35,-0.55,0.25,0.0340,0.0009,0.0350,1048,Approximate graph digitization from Lee (2021)
+60,3.25,-0.60,0.00,0.0241,0.0006,0.0320,896,Approximate graph digitization from Lee (2021)
+80,3.20,-0.20,-0.15,0.0185,0.0003,0.0280,922,Approximate graph digitization from Lee (2021)
+100,3.23,1.20,-0.10,0.0148,0.0001,0.0245,1091,Approximate graph digitization from Lee (2021)
+120,3.25,2.30,0.05,0.0122,0.0001,0.0220,1396,Approximate graph digitization from Lee (2021)
+140,3.23,2.10,0.35,0.0106,0.0003,0.0198,1800,Approximate graph digitization from Lee (2021)
+160,3.20,2.10,0.90,0.0092,0.0006,0.0180,2300,Approximate graph digitization from Lee (2021)
