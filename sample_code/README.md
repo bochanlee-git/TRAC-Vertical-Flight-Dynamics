@@ -135,11 +135,11 @@ The simulation examples demonstrate how a flight-dynamics model can be propagate
 
 Possible applications include:
 
-- response to control inputs,
-- maneuver simulation,
-- trajectory tracking,
-- closed-loop stability evaluation,
-- and flight-control research.
+- response to control inputs
+- maneuver simulation
+- trajectory tracking
+- closed-loop stability evaluation
+- and flight-control research
 
 The general workflow is:
 
