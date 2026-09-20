@@ -15,7 +15,7 @@ the public repository.
 
 TRAC expresses the coupled equations in implicit residual form:
 
-$$
+```math
 \mathbf{f}
 \left(
 \mathbf{y},
@@ -25,7 +25,7 @@ t
 \right)
 =
 \mathbf{0}.
-$$
+```
 
 Here:
 
@@ -49,7 +49,7 @@ equations to represent acceleration coupling within the assembled system.
 
 Following dissertation Eq. (2.2), the system state is partitioned as:
 
-$$
+```math
 \mathbf{y}
 =
 \begin{bmatrix}
@@ -57,7 +57,7 @@ $$
 \mathbf{y}_{\lambda} \\
 \mathbf{y}_{\mathrm{rotor}}
 \end{bmatrix}.
-$$
+```
 
 | Partition | Description |
 | --- | --- |
@@ -67,13 +67,13 @@ $$
 
 The airframe state vector is:
 
-$$
+```math
 \mathbf{y}_{F}
 =
 \begin{bmatrix}
 u & v & w & p & q & r & \phi & \theta & \psi
 \end{bmatrix}^{T}.
-$$
+```
 
 | States | Description |
 | --- | --- |
@@ -91,7 +91,7 @@ formulations included in the aircraft model.
 
 For the conventional helicopter configuration:
 
-$$
+```math
 \boldsymbol{\delta}
 =
 \begin{bmatrix}
@@ -100,7 +100,7 @@ $$
 \delta_{\mathrm{lon}} &
 \delta_{\mathrm{ped}}
 \end{bmatrix}^{T}.
-$$
+```
 
 The inputs represent:
 
@@ -141,11 +141,11 @@ Positive aircraft attitude directions are:
 In this document, a transformation $\mathbf{T}_{AB}$ maps vector
 components from frame $B$ into frame $A$:
 
-$$
+```math
 \mathbf{a}^{A}
 =
 \mathbf{T}_{AB}\mathbf{a}^{B}.
-$$
+```
 
 Blade azimuth and aircraft yaw are distinct quantities, even though
 the dissertation uses $\psi$ in both contexts.
@@ -154,17 +154,17 @@ the dissertation uses $\psi$ in both contexts.
 
 The aircraft attitude follows the 3-2-1 yaw-pitch-roll sequence:
 
-$$
+```math
 \mathbf{T}_{BG}
 =
 \mathbf{R}_{x}(\phi)
 \mathbf{R}_{y}(\theta)
 \mathbf{R}_{z}(\psi).
-$$
+```
 
 The passive coordinate-transformation matrices are:
 
-$$
+```math
 \mathbf{R}_{x}(\phi)
 =
 \begin{bmatrix}
@@ -172,9 +172,9 @@ $$
 0 & \cos\phi & \sin\phi \\
 0 & -\sin\phi & \cos\phi
 \end{bmatrix},
-$$
+```
 
-$$
+```math
 \mathbf{R}_{y}(\theta)
 =
 \begin{bmatrix}
@@ -182,9 +182,9 @@ $$
 0 & 1 & 0 \\
 \sin\theta & 0 & \cos\theta
 \end{bmatrix},
-$$
+```
 
-$$
+```math
 \mathbf{R}_{z}(\psi)
 =
 \begin{bmatrix}
@@ -192,11 +192,11 @@ $$
 -\sin\psi & \cos\psi & 0 \\
 0 & 0 & 1
 \end{bmatrix}.
-$$
+```
 
 The inverse transformation is:
 
-$$
+```math
 \mathbf{T}_{GB}
 =
 \mathbf{T}_{BG}^{T}
@@ -204,7 +204,7 @@ $$
 \mathbf{R}_{z}^{T}(\psi)
 \mathbf{R}_{y}^{T}(\theta)
 \mathbf{R}_{x}^{T}(\phi).
-$$
+```
 
 The order reverses when taking the transpose of a matrix product.
 
@@ -212,7 +212,7 @@ The order reverses when taking the transpose of a matrix product.
 
 Body angular rates and Euler-angle rates are related by:
 
-$$
+```math
 \begin{bmatrix}
 \dot{\phi} \\
 \dot{\theta} \\
@@ -227,7 +227,7 @@ $$
 \begin{bmatrix}
 p \\ q \\ r
 \end{bmatrix}.
-$$
+```
 
 Body angular rates are generally different from Euler-angle rates.
 
@@ -238,7 +238,7 @@ $\theta=\pm90^\circ$.
 
 When earth-fixed position is included:
 
-$$
+```math
 \dot{\mathbf{r}}_{\mathrm{CG}}^{G}
 =
 \mathbf{T}_{GB}\mathbf{V}^{B},
@@ -248,7 +248,7 @@ $$
 \begin{bmatrix}
 u \\ v \\ w
 \end{bmatrix}.
-$$
+```
 
 Here, $\mathbf{V}^{B}$ is the inertial velocity of the aircraft center
 of gravity expressed in body coordinates.
@@ -268,17 +268,17 @@ and rotor internal dynamics require consistent component accounting.
 
 Let the non-gravitational force expressed in body coordinates be:
 
-$$
+```math
 \mathbf{F}_{\mathrm{ng}}^{B}
 =
 \begin{bmatrix}
 X \\ Y \\ Z
 \end{bmatrix}.
-$$
+```
 
 The gravity vector in body coordinates is:
 
-$$
+```math
 \mathbf{g}^{B}
 =
 \mathbf{T}_{BG}
@@ -291,21 +291,21 @@ $$
 g\sin\phi\cos\theta \\
 g\cos\phi\cos\theta
 \end{bmatrix}.
-$$
+```
 
 With:
 
-$$
+```math
 \boldsymbol{\omega}^{B}
 =
 \begin{bmatrix}
 p \\ q \\ r
 \end{bmatrix},
-$$
+```
 
 the rigid-body translational balance is:
 
-$$
+```math
 m
 \left(
 \dot{\mathbf{V}}^{B}
@@ -318,11 +318,11 @@ m
 \mathbf{F}_{\mathrm{ng}}^{B}
 +
 m\mathbf{g}^{B}.
-$$
+```
 
 The component form is:
 
-$$
+```math
 \begin{aligned}
 \dot{u}
 &=
@@ -334,7 +334,7 @@ pw-ru+\frac{Y}{m}+g\sin\phi\cos\theta, \\
 &=
 qu-pv+\frac{Z}{m}+g\cos\phi\cos\theta.
 \end{aligned}
-$$
+```
 
 Gravity is included explicitly and must not also be included in
 $X$, $Y$, and $Z$.
@@ -343,7 +343,7 @@ $X$, $Y$, and $Z$.
 
 For a rigid body with a constant body-frame inertia tensor:
 
-$$
+```math
 \mathbf{I}_{B}\dot{\boldsymbol{\omega}}^{B}
 +
 \boldsymbol{\omega}^{B}
@@ -353,22 +353,22 @@ $$
 \right)
 =
 \mathbf{M}_{\mathrm{CG}}^{B},
-$$
+```
 
 where:
 
-$$
+```math
 \mathbf{M}_{\mathrm{CG}}^{B}
 =
 \begin{bmatrix}
 L \\ M \\ N
 \end{bmatrix}.
-$$
+```
 
 Using products of inertia defined by integrals such as
 $I_{xy}=\int xy\,dm$:
 
-$$
+```math
 \mathbf{I}_{B}
 =
 \begin{bmatrix}
@@ -376,7 +376,7 @@ I_{xx} & -I_{xy} & -I_{xz} \\
 -I_{xy} & I_{yy} & -I_{yz} \\
 -I_{xz} & -I_{yz} & I_{zz}
 \end{bmatrix}.
-$$
+```
 
 The vector form makes the inertia and cross-product conventions
 explicit.
@@ -407,25 +407,25 @@ For component $c$, define:
 
 The force transformation is:
 
-$$
+```math
 \mathbf{F}_{c}^{B}
 =
 \mathbf{T}_{Bc}\mathbf{F}_{c}^{c}.
-$$
+```
 
 The moment transferred to the aircraft center of gravity is:
 
-$$
+```math
 \mathbf{M}_{c,\mathrm{CG}}^{B}
 =
 \mathbf{T}_{Bc}\mathbf{M}_{c,\mathrm{ref}}^{c}
 +
 \mathbf{r}_{c}^{B}\times\mathbf{F}_{c}^{B}.
-$$
+```
 
 Compatible applied loads are then summed:
 
-$$
+```math
 \mathbf{F}_{\mathrm{ng}}^{B}
 =
 \sum_c \mathbf{F}_{c}^{B},
@@ -433,7 +433,7 @@ $$
 \mathbf{M}_{\mathrm{CG}}^{B}
 =
 \sum_c \mathbf{M}_{c,\mathrm{CG}}^{B}.
-$$
+```
 
 A moment already expressed about the aircraft center of gravity must
 not receive the same moment-arm contribution again.
@@ -446,25 +446,25 @@ used when assembling the implicit governing system.
 
 For a point fixed to the rigid airframe:
 
-$$
+```math
 \mathbf{V}_{P}^{B}
 =
 \mathbf{V}_{\mathrm{CG}}^{B}
 +
 \boldsymbol{\omega}^{B}\times\mathbf{r}_{P}^{B}.
-$$
+```
 
 If $\mathbf{V}_{\mathrm{air},P}^{B}$ denotes the local air velocity,
 including the relevant wind and induced flow, the point velocity
 relative to the air is:
 
-$$
+```math
 \mathbf{V}_{P/\mathrm{air}}^{B}
 =
 \mathbf{V}_{P}^{B}
 -
 \mathbf{V}_{\mathrm{air},P}^{B}.
-$$
+```
 
 The air velocity relative to the point has the opposite sign.
 Aerodynamic angles and coefficient tables must use a consistent
@@ -499,7 +499,7 @@ documented in [Trim Analysis](trim-analysis.md).
 A first-order expansion of the residual equations about a selected
 trim condition gives:
 
-$$
+```math
 \mathbf{E}\Delta\dot{\mathbf{y}}
 +
 \mathbf{F}\Delta\mathbf{y}
@@ -507,20 +507,20 @@ $$
 \mathbf{G}\Delta\boldsymbol{\delta}
 =
 \mathbf{0},
-$$
+```
 
 where:
 
-$$
+```math
 \mathbf{E}
 =
 \left.
 \frac{\partial\mathbf{f}}
 {\partial\dot{\mathbf{y}}}
 \right|_{\mathrm{trim}},
-$$
+```
 
-$$
+```math
 \mathbf{F}
 =
 \left.
@@ -534,24 +534,24 @@ $$
 \frac{\partial\mathbf{f}}
 {\partial\boldsymbol{\delta}}
 \right|_{\mathrm{trim}}.
-$$
+```
 
 Here, $\mathbf{F}$ is a residual Jacobian, distinct from the
 physical force vectors used above.
 
 When $\mathbf{E}$ is invertible:
 
-$$
+```math
 \Delta\dot{\mathbf{y}}
 =
 \mathbf{A}\Delta\mathbf{y}
 +
 \mathbf{B}\Delta\boldsymbol{\delta},
-$$
+```
 
 with:
 
-$$
+```math
 \mathbf{A}
 =
 -\mathbf{E}^{-1}\mathbf{F},
@@ -559,15 +559,15 @@ $$
 \mathbf{B}
 =
 -\mathbf{E}^{-1}\mathbf{G}.
-$$
+```
 
 For numerical computation, the equivalent linear systems are:
 
-$$
+```math
 \mathbf{E}\mathbf{A}=-\mathbf{F},
 \qquad
 \mathbf{E}\mathbf{B}=-\mathbf{G}.
-$$
+```
 
 Solving these systems avoids explicitly forming the inverse.
 
@@ -578,17 +578,17 @@ trim condition.
 
 For an output perturbation vector $\Delta\mathbf{z}$:
 
-$$
+```math
 \Delta\mathbf{z}
 =
 \mathbf{C}\Delta\mathbf{y}
 +
 \mathbf{D}\Delta\boldsymbol{\delta}.
-$$
+```
 
 The corresponding transfer-function matrix is:
 
-$$
+```math
 \mathbf{H}(s)
 =
 \mathbf{C}
@@ -598,7 +598,7 @@ s\mathbf{I}-\mathbf{A}
 \mathbf{B}
 +
 \mathbf{D}.
-$$
+```
 
 The dissertation takes $\mathbf{D}=\mathbf{0}$ for the state-based
 outputs discussed in Section 2.5.
