@@ -630,7 +630,7 @@ The equations in this document normalize notation for clarity:
 - Coordinate transformations use an explicit source-to-destination
   convention.
 - The inverse attitude transformation follows
-  $\mathbf{T}_{GB}=\mathbf{T}_{BG}^{T}$, consistent with dissertation
+  ```math\mathbf{T}_{GB}=\mathbf{T}_{BG}^{T}```, consistent with dissertation
   Eq. (2.8).
 - The roll matrix follows dissertation Eq. (2.4), including its
   nonzero third row.
