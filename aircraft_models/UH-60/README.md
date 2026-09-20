@@ -199,9 +199,9 @@ Climb and descent cases were evaluated by varying flight-path angle while mainta
 
 The dissertation reports calculations over a flight-path-angle range from approximately:
 
-\[
+$$
 -20^\circ \leq \gamma \leq 25^\circ
-\]
+$$
 
 at a stated speed of 60 knots for the reported comparison case.
 
@@ -211,13 +211,13 @@ Steady-turn conditions were evaluated using nonzero turn rates.
 
 The reported turn-rate sweep extends approximately from:
 
-\[
+$$
 -25^\circ/\mathrm{s}
 \leq
 \dot{\psi}
 \leq
 25^\circ/\mathrm{s}.
-\]
+$$
 
 These cases demonstrate the ability of the model to compute trimmed operating conditions beyond straight-and-level forward flight.
 
