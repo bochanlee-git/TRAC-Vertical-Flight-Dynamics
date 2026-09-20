@@ -352,7 +352,7 @@ TRAC-Vertical-Flight-Dynamics
 │   └── validation.md
 │
 ├── aircraft_models
-│   ├── UH60
+│   ├── UH-60
 │   └── Harmony_Aria
 │
 ├── sample_code
