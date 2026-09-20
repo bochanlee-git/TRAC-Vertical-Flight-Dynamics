@@ -91,11 +91,11 @@ Once an equilibrium solution has been obtained, the nonlinear aircraft model can
 
 The resulting state-space representation can be used for:
 
-- eigenvalue analysis,
-- dynamic-mode identification,
-- stability analysis,
-- control-system design,
-- and local response prediction.
+- eigenvalue analysis
+- dynamic-mode identification
+- stability analysis
+- control-system design
+- and local response prediction
 
 The basic workflow is:
 
